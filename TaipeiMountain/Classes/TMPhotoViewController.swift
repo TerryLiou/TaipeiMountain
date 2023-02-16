@@ -198,6 +198,7 @@ public class TMPhotoViewController: UIViewController {
                                 }
                                 
                                 album.fetchResult = changeDetail.fetchResultAfterChanges
+                                album.reload()
                                 
                                 if let currnetAlubm = self?.currentAlbum, currnetAlubm.collection.localIdentifier == album.collection.localIdentifier {
                                     DispatchQueue.main.async {
